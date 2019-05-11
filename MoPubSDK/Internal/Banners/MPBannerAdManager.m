@@ -175,7 +175,7 @@
     [self.communicator cancel];
 
     URL = (URL) ? URL : [MPAdServerURLBuilder URLWithAdUnitID:[self.delegate adUnitId]
-                                                     keywords:self.targeting.keywords
+                                                     keywords:[self.delegate currentKeywords]
                                              userDataKeywords:self.targeting.userDataKeywords
                                                      location:self.targeting.location];
 

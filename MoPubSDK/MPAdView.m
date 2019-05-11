@@ -140,6 +140,11 @@
     return self.originalSize;
 }
 
+- (NSString *)currentKeywords
+{
+    return self.keywords;
+}
+
 - (UIViewController *)viewControllerForPresentingModalView
 {
     return [self.delegate viewControllerForPresentingModalView];
